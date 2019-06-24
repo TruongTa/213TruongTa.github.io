@@ -1,0 +1,66 @@
+﻿<html>
+<head>
+    <meta name="description" content="QR Code scanner">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web QR</title>
+    <!-- Css-->
+    <link rel="stylesheet" type="text/css" href="~/Content/Site.css">
+    <!--Scripts-->
+    <script type="text/javascript" src="~/Content/WebQR_files/llqrcode.js"></script>
+    <script type="text/javascript" src="~/Content/WebQR_files/plusone.js" gapi_processed="true"></script>
+    <script type="text/javascript" src="~/Content/WebQR_files/webqr.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div style="position:relative;top:+20px;left:0px;"><div style="position: absolute; width: 450px; left: -10000px;" id="___plusone_0"><iframe ng-non-bindable="" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position:absolute;top:-10000px;width:450px;margin:0px;border-style:none" tabindex="0" vspace="0" id="I0_1561197985452" name="I0_1561197985452" src="~/Content/WebQR_files/fastbutton.htm" data-gapiattached="true" width="100%" frameborder="0"></iframe></div><g:plusone size="medium" data-gapiscan="true" data-onload="true" data-gapistub="true"></g:plusone></div>
+            <p id="mp1">
+                QR Code scanner
+            </p>
+            <ul>           
+            </ul>
+        </div>
+        <div id="mainbody" style="display: inline;">
+            <table class="tsel" width="100%" border="0">
+                <tbody>
+                    <tr>
+                        <td width="50%" valign="top" align="center">
+                            <table class="tsel" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td><img class="selector" id="webcamimg" src="~/Content/WebQR_files/vid.png" onclick="setwebcam()" style="opacity: 1;" align="left"></td>
+                                        <td><img class="selector" id="qrimg" onclick="setimg()" style="opacity: 0;" align="right"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" align="center">
+                                            <div id="outdiv"><video id="v" autoplay="autoplay"></video></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center">
+                            <img src="~/Content/WebQR_files/down.png">
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <div class="glyphicon-credit-card">
+                            <td colspan="3" align="center">
+                                <label>result</label>
+                                <div id="result">- scanning -</div>
+                            </td>
+                        </div>
+                    </tr>
+                 
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <canvas id="qr-canvas" width="800" height="600" style="width: 800px; height: 600px;"></canvas>
+    <script type="text/javascript">load();</script>
+</body>
+</html>
